@@ -189,6 +189,8 @@ int main(int argc, char** argv) {
     combine(os, "ffres", resi, len);
     combine(os, "runtime", resi, len);
 //    combine(os, "", resi, len);
+    
+    os << "subtotalruntime[" << resi << "]=Table[subtotalruntime[" << resi << ",i],{i,0," << len-1 << "}];" << endl;
 
     ptime end = microsec_clock::local_time();
     time_period period(begin, end);
