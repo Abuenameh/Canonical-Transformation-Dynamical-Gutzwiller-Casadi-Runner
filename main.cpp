@@ -43,7 +43,7 @@ void combine(ostream& os, string res, int resi, int len) {
 
 void threadfunc(int subresi, double taui, double tauf, int ntaus, arguments inargs, path resdir) {
 #ifdef AMAZON
-        string prog = "/home/ubuntu/canonical_transformat_dynamical_gutzwiller_casadi";
+        string prog = "/home/ubuntu/canonical_transformation_dynamical_gutzwiller_casadi";
 #else
         string prog = "/Users/Abuenameh/NetBeansProjects/Canonical Transformation Dynamical Gutzwiller Casadi/dist/Release/Clang-MacOSX/canonical_transformation_dynamical_gutzwiller_casadi";
 #endif
